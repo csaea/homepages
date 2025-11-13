@@ -1,7 +1,7 @@
 <template>
   <header>
-    <img src="/logo.svg" alt="CSAEA Logo" class="logo" />
-    <h1>Our Home Pages</h1>
+    <img src="/logo.png" alt="CSAEA Logo" class="logo" />
+    <h1>CSAEA Old Web Homepages</h1>
   </header>
 </template>
 
@@ -9,23 +9,45 @@
 
 <style scoped>
 header {
-  padding: 2rem 1rem; /* some breathing room */
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-/* Make logo scale with viewport but cap its maximum width */
 .logo {
-  width: 100%;
+  width: 300px;
   max-width: 1000px;
   height: auto;
   display: block;
-  margin: 0 auto 0.5rem auto; /* bottom margin scales with content */
+  margin: 0 auto 2rem auto;
 }
 
-/* Heading scales with viewport width for responsiveness */
 h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem); /* min 1.8rem, max 3rem, scales in between */
-  margin-bottom: 3rem;
-  line-height: 1.2;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow:
+    2px 2px 0 #ff00ff,
+    4px 4px 0 #ffff00,
+    6px 6px 0 #00ff00;
+  
+
+  -webkit-text-fill-color: transparent;
+  animation: neonShift 3s infinite linear;
+  letter-spacing: 1px;
+  transform: skew(-5deg) rotate(-1deg);
 }
+
+@keyframes neonShift {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
 </style>

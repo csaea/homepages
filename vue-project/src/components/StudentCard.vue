@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <a :href="student.link || '#'" target="_blank">
-      <img :src="student.image" :alt="`${student.name}'s Project`" />
+      <img :src="student.image" :alt="`${student.name}'s Homepage`" />
       <h2>{{ student.name }}’s Home Page</h2>
     </a>
     <p class="grade">{{ student.grade }}</p>
