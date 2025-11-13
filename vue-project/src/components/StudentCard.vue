@@ -2,9 +2,9 @@
   <div class="card">
     <a :href="student.link || '#'" target="_blank">
       <img :src="student.image" :alt="`${student.name}'s Project`" />
-      <h2>{{ student.name }}’s Project</h2>
+      <h2>{{ student.name }}’s Home Page</h2>
     </a>
-    <p class="grade">{{ student.project }}</p>
+    <p class="grade">{{ student.grade }}</p>
   </div>
 </template>
 
@@ -22,7 +22,8 @@ defineProps({
   padding: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   width: 100%;
-  max-width: 250px;
+  max-width: 250px; /* caps card size */
+  margin: 0 auto;   /* center within grid cell */
 }
 
 .card:hover {
