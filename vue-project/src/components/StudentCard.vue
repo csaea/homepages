@@ -1,17 +1,23 @@
 <template>
   <div class="card">
     <a :href="student.link || '#'" target="_blank">
-      <img :src="student.image" :alt="`${student.name}'s Homepage`" />
-      <h2>{{ student.name }}’s Home Page</h2>
+      <img :src="student.image" :alt="`${student.name}'s Page`" />
+      <h2>{{ student.name }}’s Space </h2>
+      <h3 class="emoji"> {{ randomEmoji }} </h3>
     </a>
-    <p class="grade">{{ student.grade }}</p>
+    <div class="cardinfo">
+      <p class="grade">{{ student.grade }}</p>
+      <p class="code">{{ student.hexcode }}</p>
+    </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
-  student: Object
-})
+import { emojis } from '../data/emojis.js'
+  defineProps({
+    student: Object
+  })
+const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
 </script>
 
 <style scoped>
@@ -38,14 +44,35 @@ defineProps({
   border: 2px solid #000;
 }
 
+
 .card h2 {
   font-size: 1rem;
   margin: 8px 0 4px;
   color: #0033cc;
 }
 
-.grade {
+.emoji {
+  font-size: 1.2rem;   
+  text-align: center;       /* center inside the card */
+  margin: 16px 0 0 0;        /* spacing around the emoji */
+  color: #4a4a4a;    
+}
+
+
+.cardinfo {
+    display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.grade  {
   font-size: 0.9rem;
   color: #555;
 }
+
+.code {
+  font-size: 0.9rem;
+  color: #555;
+}
+
 </style>

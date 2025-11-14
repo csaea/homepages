@@ -1,11 +1,14 @@
 <template>
   <header>
-    <img src="/logo.png" alt="CSAEA Logo" class="logo" />
-    <h1>CSAEA 90s Homepages</h1>
+    <a href="https://csaea.hcvsd.org/" target="_blank" ><img src="/logo.png" alt="CSAEA Logo" class="logo" /></a>
+    <div class="title-wrapper">
+      <h1>CSAEA 90s HOMEPAGES</h1>
+    </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
 <style scoped>
 header {
@@ -17,30 +20,40 @@ header {
   width: 300px;
   max-width: 1000px;
   height: auto;
-  display: block;
+  
   margin: 0 auto 2rem auto;
-
-  /* hard-edged layered shadows for Miami 90s style */
   filter:
-    drop-shadow(2px 2px 0 rgba(255, 105, 180, 1))   /* hot pink */
-    drop-shadow(4px 4px 0 rgba(0, 255, 255, 1))     /* bright cyan */
-    drop-shadow(6px 6px 0 rgba(0, 255, 128, 1));    /* neon green */
+    drop-shadow(4px 4px 0 rgba(255, 105, 180, 1))   
+    drop-shadow(5px 5px 0 rgba(0, 255, 255, 1))     
+    drop-shadow(6px 6px 0 rgba(0, 255, 128, 1));    
 }
 
 h1 {
+  display: inline-block;
   font-family: "Courier New", monospace;
   font-size: 4em;
-  text-transform: uppercase;
   font-weight: 900;
   color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
 
-  /* hard-edged vaporwave layered shadows */
+  padding: 0px 12px 0px 12px;        /* smaller vertical padding, keep horizontal for breathing room */
+  border-radius: 30px;      /* subtle rounding instead of huge curves */
+
   text-shadow:
-    2px 2px 0 rgba(255, 105, 180, 1),   /* hot pink */
-    4px 4px 0 rgba(0, 255, 255, 1),     /* bright cyan */
-    6px 6px 0 rgba(0, 255, 128, 1);     /* neon green */
+    2px 2px 0 rgba(255, 105, 180, 1),
+    4px 4px 0 rgba(0, 255, 255, 1),
+    6px 6px 0 rgba(0, 255, 128, 1);
 
   letter-spacing: 2px;
   transform: skew(-5deg) rotate(-1deg);
 }
+
+.title-wrapper {
+  text-align: center;
+}
+
+
+
+
+
 </style>
