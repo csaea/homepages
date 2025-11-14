@@ -62,7 +62,7 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  background-image: url("bg2.jpg");
+  background-image: url("bg7.png");
   background-repeat: repeat;
   transition:
     color 3s,
