@@ -46,14 +46,15 @@ function onInput() {
     width: 50%;
     padding: 14px 16px;
     border-radius: 8px;
-    border: 2px solid #d4dde8;
+    border: 2px solid black;
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
     transition: box-shadow .12s ease, border-color .12s ease;
+    box-shadow: 2px 2px 0 #00ffff;
 }
 .search-input:focus {
-    border-color: #da0284;
-    box-shadow: 2 4px 18px rgba(255, 105, 180, 1);
+    border-color: black;
+    box-shadow: 2px 2px 0 #ff00ff;
 }
 </style>

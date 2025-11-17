@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <a :href="student.link || '#'" target="_blank">
-      <img :src="student.image" :alt="`${student.name}'s Page`" />
+      <img class="preview" :src="student.image" :alt="`${student.name}'s Page`" />
       <h2>{{ student.name }}’s Space </h2>
       <h3 class="emoji"> {{ randomEmoji }} </h3>
     </a>
@@ -28,13 +28,13 @@ const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
   padding: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   width: 100%;
-  max-width: 250px; /* caps card size */
-  margin: 0 auto;   /* center within grid cell */
+  max-width: 250px; 
+  margin: 0 auto;   
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 4px 4px 0 #00ffff;
+  box-shadow: 3px 3px 0 #00ffff;
 }
 
 .card img {
@@ -73,6 +73,13 @@ const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
 .code {
   font-size: 0.9rem;
   color: #555;
+}
+
+.preview {
+  width: 275px;
+  height: 183px;
+  object-fit: cover;
+  object-position: center;
 }
 
 </style>
