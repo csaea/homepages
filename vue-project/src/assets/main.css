@@ -1,12 +1,16 @@
 @import './base.css';
 
+/* Root app container */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;           /* full width for all screens */
+  max-width: 1280px;     /* limit width on large screens */
+  margin: 0 auto;        /* center on wide screens */
+  padding: 2rem;         /* desktop padding */
   font-weight: normal;
+  box-sizing: border-box;
 }
 
+/* Links */
 a,
 .green {
   text-decoration: none;
@@ -15,16 +19,23 @@ a,
   padding: 3px;
 }
 
-
-
-/* @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
+/* Responsive adjustments for tablets and phones */
+@media (max-width: 1024px) {
   #app {
-    display: grid;
-    padding: 0 2rem;
+    padding: 1.5rem;
   }
-} */
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+    max-width: 100%;       /* remove max-width restriction */
+  }
+}
+
+/* Optional: further adjustments for very small screens */
+@media (max-width: 480px) {
+  #app {
+    padding: 0.5rem;
+  }
+}

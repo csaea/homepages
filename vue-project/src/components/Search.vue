@@ -43,7 +43,7 @@ function onInput() {
 }
 
 .search-input {
-    width: 50%;
+    width: 75%;
     padding: 14px 16px;
     border-radius: 8px;
     border: 2px solid black;
