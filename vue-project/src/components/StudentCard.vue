@@ -6,7 +6,7 @@
       <h3 class="emoji"> {{ randomEmoji }} </h3>
     </a>
     <div class="cardinfo">
-      <p class="grade">{{ student.grade }}</p>
+      <p class="grade">{{ formatGrade(student.grade)}}</p>
       <p class="code">{{ student.hexcode }}</p>
     </div>
   </div>
@@ -18,6 +18,25 @@ import { emojis } from '../data/emojis.js'
     student: Object
   })
 const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
+
+function formatGrade(grade) {
+  if (grade.startsWith("F")) {
+    return "Fr."
+        }  
+  else if (grade.startsWith("So")) {
+    return "Soph."
+  } 
+  else if (grade.startsWith("J")) {
+    return "Jr."
+  }
+  else if (grade.startsWith("Se")) {
+    return "Sr."
+  } 
+  else {
+    return ""
+        }
+}
+
 </script>
 
 <style scoped>
@@ -44,7 +63,6 @@ const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
   border: 2px solid #000;
 }
 
-
 .card h2 {
   font-size: 1rem;
   margin: 8px 0 4px;
@@ -52,10 +70,11 @@ const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
 }
 
 .emoji {
+  font-family: IBM Plex Mono, monospace;
   font-size: 1.2rem;   
   text-align: center;       /* center inside the card */
-  margin: 16px 0 0 0;        /* spacing around the emoji */
-  color: #4a4a4a;    
+  margin: 22px 0 0 0;        /* spacing around the emoji */
+  color: #000000;    
 }
 
 
@@ -67,12 +86,12 @@ const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)]
 
 .grade  {
   font-size: 0.9rem;
-  color: #555;
+  color: #727272;
 }
 
 .code {
   font-size: 0.9rem;
-  color: #555;
+  color: #727272;
 }
 
 .preview {
