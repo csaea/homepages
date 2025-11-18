@@ -9,8 +9,6 @@ defineProps({
 })
 
 
-
-
 </script>
 
 <template>
@@ -29,7 +27,7 @@ defineProps({
 <style scoped>
 .grid-wrapper {
   display: flex;
-  justify-content: center; /* center the grid container */
+  justify-content: center; 
   padding: 0 20px 40px;
   box-sizing: border-box;
   margin: 0 auto 1em auto;

@@ -79,18 +79,22 @@ function formatGrade(grade) {
 
 
 .cardinfo {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   margin-top: 4px;
 }
 
 .grade  {
-  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+    background: rgb(247, 247, 247);
   color: #727272;
 }
 
 .code {
-  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  background: rgb(247, 247, 247);
   color: #727272;
 }
 

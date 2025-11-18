@@ -8,7 +8,6 @@ import { ref, computed, onMounted } from 'vue'
 
 const query = ref('')
 
-// Shuffle function (Fisher–Yates)
 function shuffle(array) {
   const arr = [...array]
   for (let i = arr.length - 1; i > 0; i--) {
@@ -25,9 +24,29 @@ onMounted(() => {
   shuffledStudents.value = shuffle(students)
 })
 
-// Filtered list based on search
+// search
+const gradeMap = {
+  'freshme': 'freshman',
+  'freshmen': 'freshman',
+  '9': 'freshman',
+  'sophomores': 'sophomore',
+  '10': 'sophomore',
+  'juniors': 'junior',
+  '11': 'junior',
+  'jr': 'junior',
+  'jr.': 'junior',
+  'seniors': 'senior',
+  'sr': 'senior',
+  'sr.': 'senior',
+  '12': 'senior'
+}
+
 const filteredStudents = computed(() => {
-  const q = query.value.toLowerCase()
+  let q = query.value.toLowerCase()
+  // map numbers to grade names for search
+
+  if (gradeMap[q]) q = gradeMap[q]
+ 
   if (!q) return shuffledStudents.value
 
   return shuffledStudents.value.filter(
@@ -37,6 +56,7 @@ const filteredStudents = computed(() => {
       s.hexcode.toLowerCase().includes(q)
   )
 })
+
 </script>
 
 <template>

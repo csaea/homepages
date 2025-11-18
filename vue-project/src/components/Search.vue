@@ -27,6 +27,7 @@ watch(() => props.modelValue, (v) => {
 })
 
 function onInput() {
+
     emit('update:modelValue', localValue.value)
     emit('search', localValue.value)
 }
