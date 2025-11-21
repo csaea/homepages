@@ -16,10 +16,10 @@ function hexGen(id: number): string {
 
 export const students: Student[] = [
   { id: 1,  name: 'Eyad', grade: 'Freshman', image: 'previews/Eyad.png', link: 'https://eddythesixthofsevens.github.io/my-website/', hexcode: '' },
-  { id: 2,  name: 'Jayden', grade: 'Freshman', image: 'previews/Jayden.png', link: 'jaydenangulo.github.io', hexcode: '' },
+  { id: 2,  name: 'Jayden', grade: 'Freshman', image: 'previews/Jayden.png', link: 'http://jaydenangulo.github.io', hexcode: '' },
   { id: 3,  name: 'Nicholas W', grade: 'Freshman', image: 'previews/NicholasW.png', link: 'https://njkittens555.github.io/web_project_123/', hexcode: '' },
-  { id: 4,  name: 'Gabbi', grade: 'Freshman', image: 'previews/Gabriela.png', link: 'https://gabibabi2609.github.io/90s-Personal-Home-Page/', hexcode: '' },
-  { id: 5,  name: 'Aishwarya', grade: 'Freshman', image: 'previews/Aishwarya.png', link: 'https://refactored-rotary-phone-r4vv5jwx54wp2ww5j-5501.app.github.dev/', hexcode: '' },
+  { id: 4,  name: 'Gabi', grade: 'Freshman', image: 'previews/Gabriela.png', link: 'https://gabibabi2609.github.io/90s-Personal-Home-Page/', hexcode: '' },
+  { id: 5,  name: 'Aishwarya', grade: 'Freshman', image: 'previews/Aishwarya.png', link: 'https://aishwaryac8811.github.io/Web_project/', hexcode: '' },
   { id: 6,  name: 'Jaden', grade: 'Freshman', image: 'previews/Jaden.png', link: 'https://senorpancake2.github.io/90s_html_project/', hexcode: '' },
   { id: 7,  name: 'Grayson', grade: 'Freshman', image: 'previews/Grayson.png', link: 'https://redfrog3.github.io/90s_webpage/', hexcode: '' },
   { id: 8,  name: 'Aarush', grade: 'Freshman', image: 'previews/Aarush.png', link: 'https://aarush544.github.io/Personal-Webpage/', hexcode: '' },
@@ -30,9 +30,9 @@ export const students: Student[] = [
   { id: 14, name: 'Ethan', grade: 'Freshman', image: 'previews/Ethan.png', link: 'https://congenial-dollop-pj9p565qpvh66rp-5500.app.github.dev/', hexcode: '' },
   { id: 15, name: 'Chance', grade: 'Freshman', image: 'previews/Chance.png', link: 'https://github.com/sirchance123/htmlprojectcsaea', hexcode: '' },
   { id: 16, name: 'Elijah', grade: 'Freshman', image: 'previews/Elija.png', link: 'https://slash7xx.github.io/90s_webpage/', hexcode: '' },
-  { id: 17, name: 'James F', grade: 'Freshman', image: 'previews/James.png', link: 'https://fechner20.github.io/my-html-website/', hexcode: '' },
+  { id: 17, name: 'James F', grade: 'Freshman', image: 'previews/James.png', link: 'https://jko12345-theskibber.github.io/Html-Css/#dogs', hexcode: '' },
   { id: 18, name: 'Julian', grade: 'Freshman', image: 'previews/Julian.png', link: 'https://julianf-30.github.io/90s-website/', hexcode: '' },
-  { id: 19, name: 'Liam', grade: 'Freshman', image: 'previews/Wyatt.png', link: 'https://liamjostar.github.io/web_practice/', hexcode: '' },
+  { id: 19, name: 'Liam', grade: 'Freshman', image: 'previews/William.png', link: 'https://liamjostar.github.io/web_practice/', hexcode: '' },
   { id: 20, name: 'Christian B', grade: 'Junior', image: 'previews/ChristianB.png', link: 'https://iheartny888-dev.github.io/htmlproject/', hexcode: '' },
   { id: 21, name: 'Yogita', grade: 'Junior', image: 'previews/Yogita.png', link: 'https://yogitam004.github.io/90-s-Personal-Web-Page-Project/', hexcode: '' },
   { id: 22, name: 'Vaibhav', grade: 'Junior', image: 'previews/Vaibhav.png', link: 'https://voorheesvikings.github.io/comp_sci_90s_homepage/', hexcode: '' },
@@ -64,12 +64,15 @@ export const students: Student[] = [
   { id: 48, name: 'Arben', grade: 'Sophomore', image: 'previews/Arben.png', link: 'https://nebra77.github.io/My-personal-thing/', hexcode: '' },
   { id: 49, name: 'Eris', grade: 'Sophomore', image: 'previews/Zoe.png', link: 'https://erisastrophysics.github.io/MyFirstWebpage/', hexcode: '' },
   { id: 50, name: 'Atharva', grade: 'Sophomore', image: 'previews/Atharva.png', link: 'https://djshiesty.github.io/90s-HTML-website/index.html', hexcode: '' },
-  { id: 51, name: 'James K', grade: 'Sophomore', image: 'previews/JamesF.png', link: 'https://jko12345-theskibber.github.io/Html-Css/#dogs', hexcode: '' },
+  { id: 51, name: 'James K', grade: 'Sophomore', image: 'previews/JamesF.png', link: 'https://fechner20.github.io/my-html-website/', hexcode: '' },
   { id: 52, name: 'Eamon McKeon', grade: 'Sophomore', image: 'previews/Eamon.png', link: 'https://laughing-broccoli-g47r6g7ww9vrf9vxr-5501.app.github.dev/html.html', hexcode: '' },
   { id: 53, name: 'Arin', grade: 'Sophomore', image: 'previews/Arin.png', link: 'https://blighttix.github.io/website.../', hexcode: '' },
   { id: 54, name: 'Armaan', grade: 'Sophomore', image: 'previews/Armaan.png', link: 'https://blackmonkeyrat.github.io/90spersonalhomepageproject/', hexcode: '' },
   { id: 55, name: 'Nicholas S', grade: 'Junior', image: 'previews/NicholasS.png', link: 'https://ybgnick.github.io/90swebpage/', hexcode: '' },
-  { id: 56, name: 'Tian', grade: 'Junior', image: 'previews/Tian.png', link: 'https://baltimoreoriole.github.io/muncher/', hexcode: '' }
+  { id: 56, name: 'Tian', grade: 'Junior', image: 'previews/Tian.png', link: 'https://baltimoreoriole.github.io/muncher/', hexcode: '' },
+   { id: 57, name: "Kavin", grade: "Freshman", image: "previews/Kavin.png", link: "https://dogattackerwfsdvckncbipdvcjvhb.github.io/HTML-PROJECT/", hexcode: '' },
+  { id: 58, name: "Caleb", grade: "Freshman", image: "previews/Caleb.png", link: "https://elldoesstuff.github.io/Caleb-s-90-s-Website/", hexcode: '' },
+  { id: 59, name: "Mateo", grade: "Freshman", image: "previews/Mateo.png", link: "https://m4fc.github.io/90-s-website-project-/", hexcode: '' }
 ];
 
 students.forEach(student => {
