@@ -70,7 +70,7 @@ export const students: Student[] = [
   { id: 54, name: 'Armaan', grade: 'Sophomore', image: 'previews/Armaan.png', link: 'https://blackmonkeyrat.github.io/90spersonalhomepageproject/', hexcode: '' },
   { id: 55, name: 'Nicholas S', grade: 'Junior', image: 'previews/NicholasS.png', link: 'https://ybgnick.github.io/90swebpage/', hexcode: '' },
   { id: 56, name: 'Tian', grade: 'Junior', image: 'previews/Tian.png', link: 'https://baltimoreoriole.github.io/muncher/', hexcode: '' },
-   { id: 57, name: "Kavin", grade: "Freshman", image: "previews/Kavin.png", link: "https://dogattackerwfsdvckncbipdvcjvhb.github.io/HTML-PROJECT/", hexcode: '' },
+  { id: 57, name: "Kavin", grade: "Freshman", image: "previews/Kavin.png", link: "https://dogattackerwfsdvckncbipdvcjvhb.github.io/HTML-PROJECT/", hexcode: '' },
   { id: 58, name: "Caleb", grade: "Freshman", image: "previews/Caleb.png", link: "https://elldoesstuff.github.io/Caleb-s-90-s-Website/", hexcode: '' },
   { id: 59, name: "Mateo", grade: "Freshman", image: "previews/Mateo.png", link: "https://m4fc.github.io/90-s-website-project-/", hexcode: '' }
 ];
