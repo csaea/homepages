@@ -1,8 +1,8 @@
 <template>
-  <div class="card">
+  <div class="card" :style="{ background: randColor}" >
     <a :href="student.link || '#'" target="_blank">
-      <img class="preview" :src="student.image" :alt="`${student.name}'s Page`" />
-      <h2>{{ student.name }}’s Space </h2>
+      <img class="preview" :src="student.image" :alt="`${student.name}'s Homepage`" />
+      <h2 class="name">{{ student.name }}’s Homepage </h2>
       <h3 class="emoji"> {{ randomEmoji }} </h3>
     </a>
     <div class="cardinfo">
@@ -37,12 +37,19 @@ function formatGrade(grade) {
         }
 }
 
+const paleColors = ['#A3D2FF', '#7FB3FF', '#99E5C9', '#66D9D9', '#80C0FF', '#FFD1F0', '#E0C0FF', '#FFCCE5', '#CCFFEE', '#B3FFE0', '#FFE5A3', '#FFD680', '#FFC0FF', '#FF99CC', '#FFB3E6', '#D1FFCC', '#C0FFD6', '#B3FFFF', '#E5FFCC', '#CCFFE5', '#FFCC99', '#FFD699', '#FFB380', '#FFB3A3', '#FFCCB3', '#CC99FF', '#99CCFF', '#99FFCC', '#CCFF99', '#FFFF99'];
+const paleColors1 = ['FFF']
+
+const randColor = paleColors[Math.floor(Math.random() * paleColors.length)]
+
+
 </script>
 
 <style scoped>
 .card {
-  background: #fff;
+  background: #ffffff;
   border: 3px solid #000;
+  border-radius: 14px;
   box-shadow: 3px 3px 0 #ff00ff;
   padding: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -82,20 +89,21 @@ function formatGrade(grade) {
   display: flex;
   justify-content: space-between;
   margin-top: 4px;
+
 }
 
 .grade  {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
-    background: rgb(247, 247, 247);
-  color: #727272;
+
 }
 
 .code {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
-  background: rgb(247, 247, 247);
-  color: #727272;
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 14px;
+  padding: 3px;
 }
 
 .preview {

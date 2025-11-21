@@ -1,4 +1,3 @@
-// Define the shape of a student
 export interface Student {
   id: number;
   name: string;
@@ -8,14 +7,13 @@ export interface Student {
   hexcode: string;
 }
 
-// Hexcode generator
 function hexGen(id: number): string {
   const randNum = id * 10;
   const hexValue = (id * randNum).toString(16).toUpperCase();
-  return hexValue.padStart(4, '0'); // ensures 4-character hex
+  return hexValue.padStart(4, '0'); 
 }
 
-// Student data
+
 export const students: Student[] = [
   { id: 1,  name: 'Eyad', grade: 'Freshman', image: 'previews/Eyad.png', link: 'https://eddythesixthofsevens.github.io/my-website/', hexcode: '' },
   { id: 2,  name: 'Jayden', grade: 'Freshman', image: 'previews/Jayden.png', link: 'jaydenangulo.github.io', hexcode: '' },
@@ -74,7 +72,6 @@ export const students: Student[] = [
   { id: 56, name: 'Tian', grade: 'Junior', image: 'previews/Tian.png', link: 'https://baltimoreoriole.github.io/muncher/', hexcode: '' }
 ];
 
-// Assign hexcodes dynamically
 students.forEach(student => {
   student.hexcode = hexGen(student.id);
 });

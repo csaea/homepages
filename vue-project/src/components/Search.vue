@@ -3,6 +3,7 @@
         <input
             v-model="localValue"
             @input="onInput"
+            @focus="scrollDown"
             @keydown.enter.prevent
             class="search-input"
             type="search"
@@ -18,6 +19,7 @@ import { ref, watch } from 'vue'
 const props = defineProps({
     modelValue: { type: String, default: '' }
 })
+
 const emit = defineEmits(['update:modelValue', 'search'])
 
 const localValue = ref(props.modelValue)
@@ -27,11 +29,16 @@ watch(() => props.modelValue, (v) => {
 })
 
 function onInput() {
-
     emit('update:modelValue', localValue.value)
     emit('search', localValue.value)
 }
+
+function scrollDown() {
+    window.scrollTo({ top: 375, behavior: 'smooth' })
+}
+
 </script>
+
 
 <style scoped>
 .search-wrapper {
