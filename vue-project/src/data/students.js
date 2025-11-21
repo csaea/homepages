@@ -272,5 +272,10 @@ export const students = [
   { id: 55, name: 'Nicholas S', grade: 'Junior',
     image: 'previews/NicholasS.png',
     link: 'https://ybgnick.github.io/90swebpage/',
+    hexcode: '0037' },
+
+     { id: 55, name: 'Tian', grade: 'Junior',
+    image: 'previews/Tian.png',
+    link: '',
     hexcode: '0037' }
 ];
