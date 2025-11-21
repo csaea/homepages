@@ -274,8 +274,8 @@ export const students = [
     link: 'https://ybgnick.github.io/90swebpage/',
     hexcode: '0037' },
 
-     { id: 55, name: 'Tian', grade: 'Junior',
+     { id: 56, name: 'Tian', grade: 'Junior',
     image: 'previews/Tian.png',
-    link: '',
+    link: 'https://baltimoreoriole.github.io/muncher/',
     hexcode: '0037' }
 ];
